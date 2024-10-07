@@ -1,9 +1,9 @@
-# props
+# Hooks
 
-1. propsTypes
-2. List Render
-3. Optional props
-4. Static
+1. Local State
+2. Reducer State
+3. Reference
+4. Context
 
 ### Installation
 

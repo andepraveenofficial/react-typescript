@@ -1,9 +1,8 @@
 # props
 
-1. propsTypes
-2. List Render
-3. Optional props
-4. Static
+1. style props
+2. children props
+3. Event props
 
 ### Installation
 

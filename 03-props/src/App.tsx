@@ -4,7 +4,10 @@ import Person from "./components/list/Person";
 import PersonsList from "./components/list/PersonsList";
 import { namesList } from "./components/list/utils/personsList.util";
 import Card from "./components/optional/Card";
-import BeautyCard from "./components/styles/BeautyCard";
+import Status from "./components/static/Status";
+import Private from "./components/auth/Private";
+import Profile from "./components/auth/Profile";
+import Counter from "./components/class/Counter";
 
 const App: React.FC = () => {
   return (
@@ -29,19 +32,16 @@ const App: React.FC = () => {
       {/* isAvailable is the optional prop*/}
       <hr />
       <hr />
-      <h1>Style Props</h1>
-      <BeautyCard
-        name="Ande Praveen"
-        age={28}
-        isAvailable={false}
-        styles={{
-          border: "1px solid black",
-          padding: "1rem",
-          backgroundColor: "orange",
-          boxShadow: "0 0 10px black",
-          width: "600px",
-        }}
-      />
+      <h1>Static Types</h1>
+      {/* <Status status="not" /> */}
+      {/* It gives Error */}
+      <Status status="success" />
+      <hr />
+      <h1>Class</h1>
+      <Counter message="Hello Counter" />
+      <hr />
+      <hr />
+      <Private isLoggedIn={true} component={Profile} />
       <hr />
       <hr />
     </div>
